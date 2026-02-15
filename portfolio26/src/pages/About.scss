@@ -1,0 +1,65 @@
+//Fonter för hemsidan
+$frederickaTheGreat: "Fredericka the Great", serif;
+$reenieBeenie: "Reenie Beanie", cursive;
+$rockSalt: "Rock Salt", cursive;
+$poppins: "Poppins", sans-serif;
+$fraunces: "Fraunces", serif;
+$syne: "Syne", sans-serif;
+$bubbles: "Rubik Bubbles", system-ui;
+$cube: "Rubik Glitch", system-ui;
+
+//Färger för hemsidan #517b99
+$main-color: #b1835e;
+$frame-color: #ccbaac;
+$brown-color: rgb(27, 14, 8);
+
+
+
+#aboutMeContent {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: $frame-color;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px darken($brown-color, 3%);
+    }
+
+#AboutTitle {
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: $frederickaTheGreat;
+    font-weight: 400;
+    font-size: 250%;
+    color: $brown-color;
+    text-align: center;
+}
+
+#aboutMeDiv {
+    margin: 0 auto;
+}
+
+#aboutMeDiv p {
+    margin-top: 0px;
+}
+
+#aboutMeDiv h2{
+color: $brown-color;
+text-align: center;
+}
+
+
+
+    @media (max-width: 1000px) {
+        #aboutMeContent {
+            width: 80%;
+        }
+
+    }
+
+        @media (min-width: 1500px) {
+        #aboutMeContent {
+            width: 30%;
+        }
+
+    }

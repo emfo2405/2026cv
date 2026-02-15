@@ -3,7 +3,7 @@ import './Footer.scss';
 function Footer() {
 return (
     <div id="footer">
-        <p>Emma Forsmalm <br /> Webbutvecklare</p>
+        <p>Emma Forsmalm <br /> Fullstackutvecklare</p>
     </div>
 );
 }
