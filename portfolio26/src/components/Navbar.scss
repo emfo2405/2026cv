@@ -9,9 +9,9 @@ $bubbles: "Rubik Bubbles", system-ui;
 $cube: "Rubik Glitch", system-ui;
 
 //Färger för hemsidan #517b99
-$main-color: #7a8469;
+$main-color: #b1835e;
 $frame-color: #e8e6de; 
-$brown-color: rgb(31, 19, 13);
+$brown-color: rgb(24, 14, 9);
 
 
 .navbar {
@@ -48,13 +48,13 @@ $brown-color: rgb(31, 19, 13);
     }
 
     .active {
-        background-color: lighten($main-color, 5%);
+        background-color: lighten($main-color, 7%);
     }
 }
 
 .navLink::before {
   content: "";
-  background-color: lighten($main-color, 5%);
+  background-color: lighten($main-color, 7%);
   position: absolute;
   left: 0;
   bottom: 8px;

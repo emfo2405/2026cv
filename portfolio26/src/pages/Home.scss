@@ -10,9 +10,10 @@ $bubbles: "Rubik Bubbles", system-ui;
 $cube: "Rubik Glitch", system-ui;
 
 //Färger för hemsidan #517b99
-$main-color: #7a8469;
-$frame-color: #e8e6de; 
-$brown-color: rgb(31, 19, 13);
+$main-color: #b1835e;
+$frame-color: #ccbaac;
+$brown-color: rgb(51, 28, 17);
+
 
 h1 {
     white-space: nowrap;
@@ -26,8 +27,8 @@ h1 {
 
 .headerContent {
     background-color: $main-color;
-    padding-bottom: 50px;
-    padding-top: 20px;
+    padding-bottom: 80px;
+    padding-top: 50px;
     background-image: linear-gradient(lighten($main-color, 5%) 2px, transparent 3px), linear-gradient(to right, darken($main-color, 5%) 3px, $main-color 1px);
     background-size: 90px 90px;
     display: flex;
@@ -35,11 +36,12 @@ h1 {
     justify-content: center;
     gap: 30px;
     width: 100%;
+    z-index: -10;
 }
 
 .frame {
     width: 15%;
-    border: 4px solid darken($main-color, 15%);
+    border: 4px solid darken($main-color, 20%);
     transform: rotate(-5deg);
     margin: 5px;
     margin-left: 50px;
@@ -48,4 +50,68 @@ h1 {
 .cvprofile {
     width: 100%;
     transform: rotate(5deg);
+}
+
+#homeAbout {
+    background-color: $brown-color;
+    margin-top: -20px;
+    padding: 20px;
+}
+
+#aboutContent {
+    width: 40%;
+    margin: 0 auto;
+    background-color: $frame-color;
+    padding: 30px;
+
+        display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: $frame-color;
+    margin-top: -27px;
+    border: 3px solid darken($brown-color, 15%);
+    box-shadow: 10px 10px 0px darken($brown-color, 10%);
+    position: relative;
+    z-index: 10;
+    padding-top: 40px;
+
+        h2 {
+        font-family: $rockSalt;
+        text-align: center;
+        margin-top: -30px;
+        color: $brown-color;
+    }
+
+    p {
+        margin: 0 auto;
+        padding-bottom: 10%;
+        font-size: large;
+    }
+}
+
+#maillink {
+    text-decoration: none;
+    
+    padding: 15px;
+    border: 2px solid darken($brown-color, 15%);
+    margin-bottom: 20px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px darken($brown-color, 15%), 5px 5px 3px darken($brown-color, 5%);
+
+    &:hover {
+         box-shadow: 0px 0px 0px darken($brown-color, 15%), 2px 2px 3px darken($brown-color, 5%);
+            transform: translateY(3px);
+            background-color: darken($frame-color, 3%);
+        }
+}
+
+#moreInfo {
+    @extend #maillink;
+}
+
+#buttonDiv {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
