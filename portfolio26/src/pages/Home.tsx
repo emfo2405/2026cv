@@ -1,7 +1,23 @@
+import Competence from '../components/Competence';
 import './Home.scss';
 import { Link } from 'react-router-dom';
 
 function Home() {
+  const languages: string[] = [
+    "HTML", "CSS/SCSS/SASS", "JavaScript", "TypeScript", "C#", "PHP", "Python"
+  ];
+
+  const toolsSystem: string[] = [
+    "Visual Studio Code", "Visual Studio 2022", "Git/GitHub", "npm/Node.js", "Vite", "Parcel", "WordPress", ".NET"
+  ];
+
+  const framework: string[] = [
+    "LoopBack", "React", "Angular", "Express.js", "Tailwind", "Bootstrap", "Django"
+  ];
+
+  const databases: string[] = [
+    "MySQL", "PostgreSQL", "MariaDB", "SQLite", "MongoDB"
+  ];
 
 
   return (
@@ -30,6 +46,21 @@ function Home() {
     </div>
     </div>
 </div>
+
+    <div id="competensesContent">
+        <div id='competenceTitle'>
+        <h2>Kompetenser</h2>
+        </div>
+
+
+<div id='backgroundCompetence'>
+<Competence title="Språk" items={languages} />
+<Competence title="Utvecklingsverktyg och system" items={toolsSystem} />
+<Competence title="Ramverk" items={framework} />
+<Competence title="Databaser" items={databases} />
+</div>
+</div>
+
 
     <h1>Det här är startsidan!</h1>
     </>
