@@ -34,10 +34,10 @@ function Navbar() {
 
                 {menuOpen && (
                   <ul className="mobile-menu">
-                    <li><Link className="navLink-mobile" to="/" onClick={toggleMenu}>Hem</Link></li>
-                    <li><Link className="navLink-mobile" to="/About" onClick={toggleMenu}>Om mig</Link></li>
-                    <li><Link className="navLink-mobile" to="/Projects" onClick={toggleMenu}>Projekt</Link></li>
-                    <li><Link className="navLink-mobile" to="/cv" onClick={toggleMenu}>CV</Link></li>
+                    <li><NavLink className={({ isActive }) => isActive ? "navLink-mobile active" : "navLink-mobile"} to="/" onClick={toggleMenu}>Hem</NavLink></li>
+                    <li><NavLink className={({ isActive }) => isActive ? "navLink-mobile active" : "navLink-mobile"} to="/About" onClick={toggleMenu}>Om mig</NavLink></li>
+                    <li><NavLink className={({ isActive }) => isActive ? "navLink-mobile active" : "navLink-mobile"} to="/Projects" onClick={toggleMenu}>Projekt</NavLink></li>
+                    <li><NavLink className={({ isActive }) => isActive ? "navLink-mobile active" : "navLink-mobile"} to="/cv" onClick={toggleMenu}>CV</NavLink></li>
                   </ul>
                 )}
 

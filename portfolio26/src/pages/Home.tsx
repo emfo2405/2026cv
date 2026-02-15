@@ -59,10 +59,13 @@ function Home() {
 <Competence title="Ramverk" items={framework} />
 <Competence title="Databaser" items={databases} />
 </div>
+
+            <div id='buttonsCompetence'>
+        <Link to="/projects" id='projectBtn'>Till mina Projekt</Link>
+        <Link to="/cv" id='cvBtn'>Till mitt CV</Link>
+    </div>
 </div>
 
-
-    <h1>Det här är startsidan!</h1>
     </>
   )
 }

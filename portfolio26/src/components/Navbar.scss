@@ -79,6 +79,8 @@ width: 100%;
     background-color: $main-color;
     position: relative;
     display:none;
+    padding-top: 70px;
+    z-index: 20;
 
 ul {
     padding: 0;
@@ -99,8 +101,11 @@ ul {
         font-family: $poppins;
         font-weight: 500;
         position: relative;
-        z-index: 1;
 
+    }
+
+        .active {
+        background-color: lighten($main-color, 5%);
     }
 }
 

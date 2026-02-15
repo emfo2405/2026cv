@@ -1,0 +1,23 @@
+
+//Fonter för hemsidan
+$frederickaTheGreat: "Fredericka the Great", serif;
+$reenieBeenie: "Reenie Beanie", cursive;
+$rockSalt: "Rock Salt", cursive;
+$poppins: "Poppins", sans-serif;
+$fraunces: "Fraunces", serif;
+$syne: "Syne", sans-serif;
+$bubbles: "Rubik Bubbles", system-ui;
+$cube: "Rubik Glitch", system-ui;
+
+//Färger för hemsidan #517b99
+$main-color: #b1835e;
+$frame-color: #ccbaac;
+$brown-color: rgb(51, 28, 17);
+
+#footer {
+    background-color: $main-color;
+    padding: 5px;
+    margin-bottom: -10px;
+    margin-top: 50px;
+    text-align: center;
+}
