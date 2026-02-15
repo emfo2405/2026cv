@@ -1,10 +1,8 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 
 //Importera router
-import {BrowserRouter as Router, Routes, Route, BrowserRouter} from 'react-router-dom';
+import { Routes, Route, BrowserRouter} from 'react-router-dom';
 
 //Importera sidor
 import Cv from './pages/Cv';
@@ -15,7 +13,6 @@ import NotFound from './pages/NotFound';
 
 //Importera komponenter
 import Navbar from './components/Navbar';
-import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
@@ -23,7 +20,6 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
     <Navbar />
 
       <Routes>
@@ -35,7 +31,6 @@ function App() {
 
       </Routes>
       <Footer />
-    </BrowserRouter>
     </>
   )
 }
