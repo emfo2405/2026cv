@@ -41,7 +41,7 @@ function Home() {
             erfarenhet av utveckling med fokus på funktionalitet och användbarhet.
         </p>
         <div id='buttonDiv'>
-        <a id="maillink" href="mailto:emma_forsmalm@.com">Kontakta mig!</a>
+        <a id="maillink" href="mailto:emma_forsmalm@hotmail.com">Kontakta mig!</a>
         <Link to="/About" id='moreInfo'>Läs mer</Link>
     </div>
     </div>

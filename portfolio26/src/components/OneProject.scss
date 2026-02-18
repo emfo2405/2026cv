@@ -1,0 +1,140 @@
+//Fonter för hemsidan
+$frederickaTheGreat: "Fredericka the Great", serif;
+$reenieBeenie: "Reenie Beanie", cursive;
+$rockSalt: "Rock Salt", cursive;
+$poppins: "Poppins", sans-serif;
+$fraunces: "Fraunces", serif;
+$syne: "Syne", sans-serif;
+$bubbles: "Rubik Bubbles", system-ui;
+$cube: "Rubik Glitch", system-ui;
+
+//Färger för hemsidan #517b99
+$main-color: #a07d74;
+$cream-color: #85544d;
+$frame-color: #FAF2EC;
+$contrast-color: #5A3532;
+$brown-color: rgb(24, 14, 9);
+
+#projectContent {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    justify-content: center;
+    gap: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 150px;
+
+
+
+
+    .project {
+        background-color: $frame-color;
+        width: 380px;
+        border-radius: 20px;
+        text-align: center;
+        font-family: $poppins;
+        box-shadow: 5px 5px 0px darken($cream-color, 10%);
+        margin: 20px;
+
+        p{
+            font-family: $poppins;
+            width: 70%;
+            margin-left: 15%;
+            margin-bottom: 50px;
+            text-align: left;
+        }
+
+        h2 {
+            color: $brown-color;
+            font-family: $poppins;
+        }
+
+        .projectlink {
+            text-decoration: none;
+            color: $brown-color;
+            border: 2px solid $cream-color;
+            padding: 15px;
+            border-radius: 25px;
+            width: 100px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 40px;
+
+            &:hover {
+                background-color: lighten($main-color, 8%);
+                border: 2px solid darken($main-color, 10%)
+            }
+        }
+        
+
+
+    }
+}
+
+
+
+.projectImg {
+    width: 200px;
+    border-radius: 20px;
+    border: 7px solid $main-color;
+}
+
+.projectBtns {
+    display: flex;
+    flex-direction: column;
+}
+
+.moreInfo {
+    background-color: $frame-color;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: -20px;
+    color: $frame-color;
+}
+
+#projectHead {
+    margin-top: 100px;
+
+    h2 {
+        font-family: $frederickaTheGreat;
+        font-weight: 400;
+    font-size: 250%;
+    color: $frame-color;
+    text-align: center;
+    }
+}
+
+    #projectTitle {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    #linkInfo {
+        text-align: center;
+        color: $frame-color;
+        font-family: $poppins;
+        margin: 0;
+        padding: 0;
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: -60px;
+    }
+
+    .moreInfo:hover {
+        cursor: pointer;
+    }
+
+    .moreInfo {
+        color: $brown-color;
+    }
+
+    @media (max-width: 1000px) {
+        #projectContent {
+            grid-template-columns: repeat(1, 400px);
+        }
+    }

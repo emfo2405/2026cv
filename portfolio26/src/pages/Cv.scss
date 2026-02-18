@@ -1,0 +1,96 @@
+
+//Fonter för hemsidan
+$frederickaTheGreat: "Fredericka the Great", serif;
+$reenieBeenie: "Reenie Beanie", cursive;
+$rockSalt: "Rock Salt", cursive;
+$poppins: "Poppins", sans-serif;
+$fraunces: "Fraunces", serif;
+$syne: "Syne", sans-serif;
+$bubbles: "Rubik Bubbles", system-ui;
+$cube: "Rubik Glitch", system-ui;
+
+//Färger för hemsidan #517b99
+$main-color: #a07d74;
+$cream-color: #85544d;
+$frame-color: #FAF2EC;
+$contrast-color: #5A3532;
+$brown-color: rgb(24, 14, 9);
+
+.cvInput, .studiesInput, .articleInput {
+    background-color: $frame-color;
+    box-shadow: 10px 10px 0px darken($brown-color, 20%);
+    padding: 20px;
+    width: 500px;
+    margin: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+        padding: 20px;
+    border: 2px solid darken($brown-color, 20%);
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.articleInput {
+    padding-bottom: 40px;
+}
+
+.cvInput p, h3, .studiesInput p, h3, .articleInput p, h3{
+    font-family: $poppins;
+}
+
+#cvTitle {
+    margin-top: 50px;
+}
+
+
+h1, h2{
+    text-align: center;
+    font-size: 180%;
+    margin: 30px;
+    color: $frame-color;
+    font-family: $frederickaTheGreat;
+    font-weight: 400;
+
+}
+
+h2 {
+    padding-top: 40px;
+}
+
+#cvTitle {
+    font-family: $frederickaTheGreat;
+    font-weight: 400;
+        font-size: 250%;
+}
+
+.articleInput p {
+    margin-bottom: 40px;
+}
+
+.articleInput a {
+    color: darken($brown-color, 10%);
+    text-decoration: none;
+    border: 2px solid darken($brown-color, 10%);
+    padding: 8px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 0px darken($brown-color, 10%);
+    width: 130px;
+    text-align: center;
+}
+
+.articleInput a:hover {
+        background-color: darken($frame-color, 10%);
+}
+
+
+@media (max-width: 800px) {
+    #cvTitle {
+    margin-top: 100px;
+}
+}
+
+@media (max-width: 1000px) {
+    .cvInput, .studiesInput, .articleInput {
+        width: 400px;
+    }
+}

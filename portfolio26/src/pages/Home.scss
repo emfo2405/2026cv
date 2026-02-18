@@ -10,12 +10,14 @@ $bubbles: "Rubik Bubbles", system-ui;
 $cube: "Rubik Glitch", system-ui;
 
 //Färger för hemsidan #517b99
-$main-color: #b1835e;
-$frame-color: #ccbaac;
-$brown-color: rgb(51, 28, 17);
+$main-color: #a07d74;
+$cream-color: #85544d;
+$frame-color: #FAF2EC;
+$contrast-color: #5A3532;
+$brown-color: rgb(24, 14, 9);
 
 body {
-    background-color: $brown-color;
+    background-color: $cream-color;
 }
 
 .headerText {
@@ -31,7 +33,7 @@ body {
 .headerContent {
     background-color: $main-color;
     padding-bottom: 80px;
-    padding-top: 50px;
+    padding-top: 80px;
     background-image: linear-gradient(lighten($main-color, 5%) 2px, transparent 3px), linear-gradient(to right, darken($main-color, 5%) 3px, $main-color 1px);
     background-size: 90px 90px;
     display: flex;
@@ -44,7 +46,7 @@ body {
 
 .frame {
     width: 15%;
-    border: 4px solid darken($main-color, 20%);
+    border: 4px solid $cream-color;
     transform: rotate(-5deg);
     margin: 5px;
     margin-left: 50px;
@@ -56,7 +58,7 @@ body {
 }
 
 #homeAbout {
-    background-color: $brown-color;
+    background-color: $cream-color;
     margin-top: -20px;
     padding: 20px;
 }
@@ -67,13 +69,13 @@ body {
     background-color: $frame-color;
     padding: 30px;
 
-        display: flex;
+    display: flex;
     flex-direction: column;
     margin: 0 auto;
     background-color: $frame-color;
     margin-top: -27px;
-    border: 3px solid darken($brown-color, 15%);
-    box-shadow: 10px 10px 0px darken($brown-color, 10%);
+    border: 3px solid darken($brown-color, 10%);
+    box-shadow: 10px 10px 0px $contrast-color;
     position: relative;
     z-index: 1;
     padding-top: 40px;
@@ -96,16 +98,15 @@ body {
     text-decoration: none;
     
     padding: 15px;
-    border: 2px solid darken($brown-color, 15%);
+    border: 2px solid $contrast-color;
     margin-bottom: 20px;
     color: black;
     border-radius: 10px;
-    box-shadow: 3px 3px 0px darken($brown-color, 15%), 5px 5px 3px darken($brown-color, 5%);
+    box-shadow: 3px 3px 0px darken($contrast-color, 10%), 5px 5px 3px darken($contrast-color, 10%);
 
     &:hover {
-         box-shadow: 0px 0px 0px darken($brown-color, 15%), 2px 2px 3px darken($brown-color, 5%);
+         box-shadow: 0px 0px 0px darken($contrast-color, 10%), 2px 2px 3px darken($contrast-color, 10%);
             transform: translateY(3px);
-            background-color: darken($frame-color, 3%);
         }
 }
 
@@ -153,8 +154,8 @@ body {
         background-color: $frame-color;
         width: 200px;
         font-family: $poppins;
-        box-shadow: 10px 10px 0px darken($main-color, 10%);
-        border: 4px solid darken($brown-color, 10%);
+        box-shadow: 10px 10px 0px darken($contrast-color, 10%);
+        border: 4px solid darken($contrast-color, 10%);
         text-align: center;
         padding: 20px;
 
@@ -189,7 +190,7 @@ body {
 
     #buttonsCompetence {
         background-color: $main-color;
-        border-bottom: 5px solid darken($brown-color, 15%);
+        border-bottom: 5px solid darken($contrast-color, 10%);
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -201,12 +202,12 @@ body {
             text-decoration: none;
             padding: 10px;
             color: black;
-            border: 2px solid darken($brown-color, 15%);
+            border: 2px solid darken($contrast-color, 10%);
             border-radius: 10px;
-            box-shadow: 4px 4px 0px darken($main-color, 15%), 6px 6px 3px darken($main-color, 10%);
+            box-shadow: 4px 4px 0px darken($contrast-color, 10%), 6px 6px 3px darken($contrast-color, 10%);
 
             &:hover {
-                 box-shadow: 0px 0px 0px darken($main-color, 15%), 3px 3px 3px darken($main-color, 10%);
+                 box-shadow: 0px 0px 0px darken($contrast-color, 10%), 3px 3px 3px darken($contrast-color, 10%);
             transform: translateY(3px);
             }
 
@@ -233,13 +234,14 @@ body {
             width: 80%;
         }
 
-        h1 {
+        .headerText {
             font-size: 280%;
         }
 
         .frame {
-            width: 20%;
+            width: 17%;
         }
+
     }
 
         @media (min-width: 1500px) {

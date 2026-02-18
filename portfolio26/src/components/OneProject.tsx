@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import './ProjectsIntroduction.scss';
+import './OneProject.scss';
 
 type ProjectProps = {
     title: string;
@@ -12,7 +12,7 @@ type ProjectProps = {
 };
 
 
-function Projects({title, image, imageAlt, description, link, extraInfo}: ProjectProps) {
+function OneProject({title, image, imageAlt, description, link, extraInfo}: ProjectProps) {
 const [show, setShow] = useState(false);
 
 return (
@@ -20,14 +20,14 @@ return (
         <div className='project'>
             <h2>{title}</h2>
             <img className='projectImg' src={image} alt={imageAlt}></img>
-            <p>{description}</p>
+            <p className='lineheight'>{description}</p>
             <div className='projectBtns'>
             <button className="moreInfo" onClick={() => setShow(choice => !choice)}>{show ? (<>Dölj information<span className="material-symbols-outlined">
 arrow_drop_up
 </span></>) : (<>Visa mer information<span className="material-symbols-outlined">
 arrow_drop_down
 </span></>)}</button>
-            {show && <p>{extraInfo}</p>}
+            {show && <p className='lineheight'>{extraInfo}</p>}
             <a className="projectlink" target='_blank' href={link}>Till sidan</a>
             </div>
         </div>
@@ -35,4 +35,4 @@ arrow_drop_down
 );
 }
 
-export default Projects;
+export default OneProject;

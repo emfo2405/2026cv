@@ -10,7 +10,7 @@ function About() {
         <h1 id="AboutTitle">- Om mig -</h1>
         <div id="aboutMeDiv">
             <h2>Studier</h2>
-            <p>Jag läser just nu mitt sista år på webbutvecklingsprogrammet vid Mittuniversitetet. Under programmets
+            <p className='lineheight'>Jag läser just nu mitt sista år på webbutvecklingsprogrammet vid Mittuniversitetet. Under programmets
                 gång har jag lärt mig otroligt mycket och fått en bred kompetens inom olika programmeringsspråk, 
                 verktyg och metoder. De språk som jag har arbetat med är HTML, PHP, JavaScript, TypeScript och C#. 
                 Genom kursprojekt och uppgifter har jag även fått prova på olika ramverk och utvecklingsverktyg vilket
@@ -26,27 +26,18 @@ function About() {
                 Projektledningskursen har även gett mig kunskap i hur man planerar och genomför ett projekt från 
                 en ledarroll och vad man ska tänka på i en sådan situation i kontrast till när man arbetar i projektet.
                 Sammanfattningsvis har programmet hittills gett mig både tekniska och praktiska kunskaper som jag gärna
-                vill utveckla mer men även utforska nya områden. 
+                vill utveckla mer men även utforska nya områden.
                 
                
             </p>
-            <h2>Fritid</h2>
-            <p>text text text text text text text text text text text text
-                text text text text text text text text text text text text
-                text text text text text text text text text text text text
-                text text text text text text text text text text text text
-                text text text text text text text text text text text text
-                text text text text text text text text text text text text
-                text text text text text text text text text text text text</p>
-                
+
             <h2>Arbetslivserfarenheter</h2>
-            <p>text text text text text text text text text text text text
-                text text text text text text text text text text text text
-                text text text text text text text text text text text text
-                text text text text text text text text text text text text
-                text text text text text text text text text text text text
-                text text text text text text text text text text text text
-                text text text text text text text text text text text text</p>
+            <p className='lineheight'>Parallellt med mina studier har jag arbetat vid Göteborgs Universitet sedan 2016, i olika projekt och
+roller. Jag har bland annat arbetat med nationella prov, datainmatning, arkivering och transkribering
+i forskningsprojekt. I dessa uppdrag har jag tagit stort eget ansvar, arbetat strukturerat och noggrant
+samt haft nära samarbete med andra kollegor. Mellan 2024 och 2025 arbetade jag även med
+digitalisering och bearbetning av texter, där noggrannheten har varit väldigt viktig.
+            </p>
         </div>
     </div>
     </div>
