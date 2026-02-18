@@ -3,7 +3,7 @@ function NotFound() {
 
   return (
     <>
-    <h1>Det här är startsidan!</h1>
+    <h1>Sidan hittades inte!</h1>
     </>
   )
 }
